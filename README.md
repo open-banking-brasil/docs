@@ -58,7 +58,7 @@ openbanking@fintechsp.co
 
  - Dados Transacionais
  
- *Saldo e movimentação de Contas, limtes e juros e uso do Cheque Especial, Saldo e movimentações de Cartões *
+ *Saldo e movimentação de Contas, limtes e juros e uso do Cheque Especial, Saldo e movimentações de Cartões*
 
  - Serviços  
  
@@ -66,7 +66,7 @@ openbanking@fintechsp.co
 
  - Demais Dados Transacionais
  
- *Operações de crédito, Operações de câmbio, Investimentos, Seguros, Previdência complementar aberta, etc.. *
+ *Operações de crédito, Operações de câmbio, Investimentos, Seguros, Previdência complementar aberta, etc..*
 
  - Especificações Gerais 
  
