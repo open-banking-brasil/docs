@@ -49,62 +49,33 @@ openbanking@fintechsp.co
 **Pessoas Físicas & MEIs**
 
  - Dados de Canais de Atendimento, Produtos e Serviços 
- -- Locais de Atendimento [Agencias|PAB] (Localização / Horarios / Status / Serviços)
- -- ATMs [Próprios|Compartilhados] (Localização / Horarios / Status / Serviços)
- -- Serviços 
- --- Tipos de Contas
- --- Pacotes 
- --- Tarifas realcionadas a Serviços e Pacotes
+ 
+ * Locais de Atendimento [Agencias|PAB] (Localização / Horarios / Status / Serviços), ATMs [Próprios|Compartilhados] (Localização / Horarios / Status / Serviços), Serviços (Tipos de Contas, Pacotes, Tarifas realcionadas a Serviços e Pacotes*
  
  - Dados de Clientes
- *Primeiramente focar em Pessoas Físicas e MEIs*
  
- -- Identificação: 
- --- informações mínimas exigidas pela regulamentação em vigor
- --- outras informações mantidas pela instituição; 
--- qualificação; 
--- Outras informações cadastrais: 
---- data de início de relacionamento; 
---- identificação de agência e conta; 
---- tipos de produtos e serviços com contratos vigentes; 
---- poderes dos representantes.
+ * Identificação (informações mínimas exigidas pela regulamentação em vigor, outras informações mantidas pela instituição; qualificação; Outras informações cadastrais: data de início de relacionamento; identificação de agência e conta; tipos de produtos e serviços com contratos vigentes;  poderes dos representantes.)*
 
  - Dados Transacionais
- -- Saldo e movimentação de Contas
- --- Limtes e juros e uso do Cheque Especial
- -- Saldo e movimentações de Cartões 
+ 
+ * Saldo e movimentação de Contas, limtes e juros e uso do Cheque Especial, Saldo e movimentações de Cartões *
 
  - Serviços  
- -- Transação de Pagamento
- --- Débito / Crédito
- --- PIX
- --- TEF
- --- TED / DOC
- --- Titulos
- --- Tributos e Concessionárias
- -- Encaminhamento de;
- --- proposta de operação de crédito
- --- proposta de abertura de conta
- --- outros?
+ 
+ *  Transação de Pagamento, Encaminhamento de propostas 
 
  - Demais Dados Transacionais
- -- Operações de crédito
- -- Operações de câmbio
- -- Investimentos 
- -- Seguros
- -- Previdência complementar aberta
+ 
+ * Operações de crédito, Operações de câmbio, Investimentos, Seguros, Previdência complementar aberta, etc.. *
 
  - Especificações Gerais 
- -- Autenticações
- -- Fluxos
- -- Escopos 
+ 
+ * Autenticações, Fluxos, Escopos *
 
 **Pessoas Juridicas & Governo**
- - Dados de Produtos e Serviços
- - Dados de Clientes
- - Dados Transacionais 
- - Serviços
- - Demais dados e serviços.
 
- - Especificações Gerais
- -- Analisar possiveis alterações
+ - Dados de Canais de Atendimento, Produtos e Serviços 
+ - Dados de Clientes
+ - Dados Transacionais
+ - Serviços  
+ - Especificações Gerais 
