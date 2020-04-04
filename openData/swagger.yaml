@@ -1,0 +1,174 @@
+swagger: "2.0"
+info:
+  description: "Documentação de abertura de dados, *Open Banking*, referente a Canais de Atendimento, Produtos e Serviços"
+  version: "0.0.1"
+  title: "Canais de Atendimento, Produtos e Serviços "
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "api.banpoc.com"
+basePath: "/v1"
+schemes:
+- "https"
+paths:
+  /institution:
+    get:
+      tags:
+      - "institution"
+      summary: "Retorna dados da instituição"
+      description: ""
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid status value"
+        
+  /branches:
+    get:
+      tags:
+      - "branches"
+      summary: "Retorna a lista de agencias"
+      description: "Retorna a lista de agencias"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []
+  /branches/{branchId}:
+    get:
+      tags:
+      - "branches"
+      summary: "Retorna a Agencias por Id"
+      description: "Retorna a Agencias por Id"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "branchId"
+        in: "path"
+
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+  /branches/uf/{uf}:
+    get:
+      tags:
+      - "branches"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "uf"
+        in: "path"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+  /branches/uf/city/{city}:
+    get:
+      tags:
+      - "branches"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "city"
+        in: "path"
+
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+
+  /atms/:
+    get:
+      tags:
+      - "atms"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []
+  /atms/{atmId}:
+    get:
+      tags:
+      - "atms"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "atmId"
+        in: "path"
+
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+  /atms/uf/{uf}:
+    get:
+      tags:
+      - "atms"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "uf"
+        in: "path"
+
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+  /atms/uf/city/{city}:
+    get:
+      tags:
+      - "atms"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "city"
+        in: "path"
+
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+
+
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "https://oauth.banpoc.com/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      read:me: ""
+      read:accounts: ""
+      read:balance: ""
+      read:statement: ""
+      read:transfers: ""
+      write:transfers: ""
+      read:payments: ""
+      write:payments: ""
+      read:loans: ""
+      write:loans: ""
+      read:invoices: ""
+      write:invoices: ""
+      read:investments: ""
+      write:investments: ""
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
