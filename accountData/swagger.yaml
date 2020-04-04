@@ -1,0 +1,152 @@
+swagger: "2.0"
+info:
+  description: "Documentação de abertura de dados, *Open Banking*, referente a Saldo de Conta Corrente e Transações Financeiras"
+  version: "0.0.1"
+  title: "Conta Corrente e Transações Financeiras "
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "api.banpoc.com"
+basePath: "/v1"
+schemes:
+- "https"
+paths:
+  /accounts:
+    get:
+      tags:
+      - "accounts"
+      summary: "Retorna a Lista de Contas"
+      description: ""
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+        400:
+          description: "Invalid status value"
+        
+  /accounts/balances:
+    get:
+      tags:
+      - "accounts"
+      summary: "Retorna a lista de agencias"
+      description: "Retorna a lista de Contas Filtradas"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []
+      
+  /accounts/{accountId}:
+    get:
+      tags:
+      - "accounts"
+      summary: "Retorna o saldo por conta"
+      description: "Retorna o saldo por conta"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "accountId"
+        in: "path"
+
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []    
+      
+      
+  /accounts/{accountId}/balance:
+    get:
+      tags:
+      - "accounts"
+      summary: "Retorna o balanço da conta"
+      description: "Retorna o balanço da conta"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "accountId"
+        in: "path"
+
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []
+
+  /accounts/{accountId}/detail:
+    get:
+      tags:
+      - "accounts"
+      summary: "Retorna o detalhe da conta"
+      description: "Retorna o detalhe da conta"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "accountId"
+        in: "path"
+
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []
+
+  /accounts/{accountId}/transactions:
+    get:
+      tags:
+      - "transactions"
+      summary: "Retorna as transações financeiras"
+      description: "Retorna as transações financeiras"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "accountId"
+        in: "path"
+
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: "successful operation"
+      security:
+      - api_key: []      
+      
+
+securityDefinitions:
+  petstore_auth:
+    type: "oauth2"
+    authorizationUrl: "https://oauth.banpoc.com/oauth/dialog"
+    flow: "implicit"
+    scopes:
+      read:me: ""
+      read:accounts: ""
+      read:balance: ""
+      read:statement: ""
+      read:transfers: ""
+      write:transfers: ""
+      read:payments: ""
+      write:payments: ""
+      read:loans: ""
+      write:loans: ""
+      read:invoices: ""
+      write:invoices: ""
+      read:investments: ""
+      write:investments: ""
+  api_key:
+    type: "apiKey"
+    name: "api_key"
+    in: "header"
+
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
