@@ -50,27 +50,27 @@ openbanking@fintechsp.co
 
  - Dados de Canais de Atendimento, Produtos e Serviços 
  
- * Locais de Atendimento [Agencias|PAB] (Localização / Horarios / Status / Serviços), ATMs [Próprios|Compartilhados] (Localização / Horarios / Status / Serviços), Serviços (Tipos de Contas, Pacotes, Tarifas realcionadas a Serviços e Pacotes*
+ *Locais de Atendimento [Agencias|PAB] (Localização / Horarios / Status / Serviços), ATMs [Próprios|Compartilhados] (Localização / Horarios / Status / Serviços), Serviços (Tipos de Contas, Pacotes, Tarifas realcionadas a Serviços e Pacotes*
  
  - Dados de Clientes
  
- * Identificação (informações mínimas exigidas pela regulamentação em vigor, outras informações mantidas pela instituição; qualificação; Outras informações cadastrais: data de início de relacionamento; identificação de agência e conta; tipos de produtos e serviços com contratos vigentes;  poderes dos representantes.)*
+ *Identificação (informações mínimas exigidas pela regulamentação em vigor, outras informações mantidas pela instituição; qualificação; Outras informações cadastrais: data de início de relacionamento; identificação de agência e conta; tipos de produtos e serviços com contratos vigentes;  poderes dos representantes.)*
 
  - Dados Transacionais
  
- * Saldo e movimentação de Contas, limtes e juros e uso do Cheque Especial, Saldo e movimentações de Cartões *
+ *Saldo e movimentação de Contas, limtes e juros e uso do Cheque Especial, Saldo e movimentações de Cartões *
 
  - Serviços  
  
- *  Transação de Pagamento, Encaminhamento de propostas 
+ *Transação de Pagamento, Encaminhamento de propostas 
 
  - Demais Dados Transacionais
  
- * Operações de crédito, Operações de câmbio, Investimentos, Seguros, Previdência complementar aberta, etc.. *
+ *Operações de crédito, Operações de câmbio, Investimentos, Seguros, Previdência complementar aberta, etc.. *
 
  - Especificações Gerais 
  
- * Autenticações, Fluxos, Escopos *
+ *Autenticações, Fluxos, Escopos*
 
 **Pessoas Juridicas & Governo**
 
